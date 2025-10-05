@@ -50,4 +50,4 @@ resource "null_resource" "trigger_node_exporter_restart" {
   provisioner "local-exec" {
     command = "kubectl rollout restart daemonset/node-exporter -n monitoring || true"
   }
-#}
+}
